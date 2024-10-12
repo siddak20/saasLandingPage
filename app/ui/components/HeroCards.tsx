@@ -37,7 +37,7 @@ useEffect(()=>{
    return ()=>{
     tl.kill();
    }
-},[]);
+},[height]);
   return (
     <div className="cards-parent  dark:text-white w-11/12 max-w-[1536px] flex lg:flex-row flex-col  justify-between items-center ">
         <Card1/>
@@ -166,10 +166,3 @@ const Card3=()=>{
 }
 
 
-const StatsSvg=({height}:{height:number})=>{
-    return (
-        <svg xmlns="http://www.w3.org/2000/svg" width="40" height={height} viewBox="0 0 12 36" fill="none" className="">
-         <rect width={50} height={height} fill="#FC5A41"/>
-         </svg>
-    )
-};
